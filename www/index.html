@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/b1.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/databaseHandler.js"></script>
+    <script type="text/javascript" src="js/productHandler.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/b1-.js"></script>
+    <title>I-Rate App</title>
+</head>
+<body>
+    <header>
+        <h1>I-Rate App</h1>
+    </header>
+    <div class="container">
+        <form id="form">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Restaurant Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" class="name1">
+                    <div class="error"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="type">Restaurant Type</label>
+                </div>
+                <div class="col-75">
+                    <select id="type" name="type">
+                        <option value="1">Buffet Restaurant</option>
+                        <option value="2">Veg Restaurant</option>
+                        <option value="3">Non-veg Restaurant</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="time">Bussiness Hour</label>
+                </div>
+                <div class="col-75">
+                    <select id="time" name="time">
+                        <option value="1">7:00 am - 10:00 pm</option>
+                        <option value="2">6:00 am - 11:00 pm</option>
+                        <option value="3">8:00 am - 12:00 pm</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="price">Price</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="price" name="price" class="price1">
+                    <div class="error"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="service">Service Rating</label>
+                </div>
+                <div class="col-75">
+                    <select id="service" name="service">
+                        <option value="1">Bad</option>
+                        <option value="2">Good</option>
+                        <option value="3">Very Good</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="clean">Cleanliness Rating</label>
+                </div>
+                <div class="col-75">
+                    <select id="clean" name="clean">
+                        <option value="1">Bad</option>
+                        <option value="2">Good</option>
+                        <option value="3">Very Good</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="food">Food quality rating</label>
+                </div>
+                <div class="col-75">
+                    <select id="food" name="food">
+                        <option value="1">Bad</option>
+                        <option value="2">Good</option>
+                        <option value="3">Very Good</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="note">Note</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="note" name="note" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="nameReport">Name Report</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nameReport" name="nameReport" class="nameReport">
+                    <div class="error"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" onclick="addProduct()" value="Submit" >
+                <!-- onclick="addProduct()" -->
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
